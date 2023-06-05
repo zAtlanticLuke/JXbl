@@ -4,12 +4,9 @@ window.queryVersion = function()
         .then(response =>
         {
             if (response.ok)
-            {
                 return response.text();
-            } else
-            {
+            else
                 throw new Error('Failed to fetch version');
-            }
         })
         .then(data =>
         {
